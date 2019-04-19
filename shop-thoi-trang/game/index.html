@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Dupbps03216_Lab7 | HTML5 & CSS3</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("Text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("Text");
+			if(ev.target.nodeName == "DIV") {
+				ev.target.appendChild(document.getElementById(data));
+			}else alert("Vị trí đã có hình. Bạn nên chọn vị trí khác hoặc dời hình sang vị trí mới");
+			finish();
+		}
+
+		function finish(){
+			var d = document.getElementById("parts");
+			var bool = false;			
+			for(i = 0; i < d.childNodes.length-1; i++) {		
+				if(d.childNodes[i].nodeName == "IMG")
+				bool = true;
+			}
+			if(bool == false)
+				alert("Chúc mừng bạn đã hoàn thành Game");
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>POLY GAME</h1>			
+		</header>		
+		<section id="content">
+			<aside>
+			<h2>Game xếp hình ></h2><br />
+			<p>Luật chơi:<br /><br />Sử dụng chuột, kéo thả những hình ảnh con vào vùng hiển thị sao cho đúng</p>
+			</aside>
+			<article>			
+				<div id="complete">
+					<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>					
+				</div>		
+			<h2>Kéo thả hình ảnh con sao cho đúng</h2>			
+				<div id="parts">
+					<img id="drag11" src="images/cut/a11.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag10" src="images/cut/a10.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag12" src="images/cut/a12.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag2" src="images/cut/a2.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag1" src="images/cut/a1.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag3" src="images/cut/a3.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag7" src="images/cut/a7.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag5" src="images/cut/a5.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag9" src="images/cut/a9.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag6" src="images/cut/a6.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag4" src="images/cut/a4.jpg" draggable="true" ondragstart="drag(event)" />
+					<img id="drag8" src="images/cut/a8.jpg" draggable="true" ondragstart="drag(event)" />			
+				</div>	
+			</article>			
+		</section>
+		<footer>Đây là trang web được thực hiện bởi Sinh viên FPoly<br />@ Dupbps03216 @</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Gamja Flower';
+	font-size: 28px;
+	color: #222;
+}
+
+#header .navbar {
+	background-color: rgba(82,64,120,0.9) !important;
+}
+
+#header .navbar li a {
+	color: white !important;
+}
+
+#header .navbar li a:hover {
+	color: black !important;
+}
+
+#content .carousel-inner img {
+	width: 100%;
+}
+
+#content .carousel-inner .carousel-caption {
+	position: absolute;
+	top: 35%;
+}
+
+#content .carousel-inner .carousel-caption h1 {
+	font-size: 400%;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 15px #000;
+}
+
+#content .carousel-inner .carousel-caption h3 {
+	font-size: 200%;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 10px #000;
+}
+
+#content .carousel-inner .carousel-caption .btn-primary {
+	background-color: rgb(82,64,120);
+	border: 1px solid white;
+}
+
+#content .carousel-inner .carousel-caption .btn-primary:hover {
+	background-color: rgb(62,44,100);
+}
+
+.jumbotron {
+	padding: 1rem;
+	border-radius: 0;
+}
+
+.welcome hr {
+	border-top: 2px solid rgba(62,44,100,0.6);
+	width: 95%;
+	margin-bottom: 2rem;
+}
+
+.fa-react {
+	color: #81D8F7;
+}
+
+.fa-angular {
+	color: rgb(177,43,55);
+}
+
+.fa-css3 {
+	color: #D76537;
+}
+
+.fa-react, .fa-angular, .fa-css3 {
+	font-size: 4em;
+	margin: 1rem;
+}
+
+.fun {
+	width: 100%;
+}
+
+.social a {
+	font-size: 3em; /*1em = 16px*/
+	padding: 3rem; /*1rem = 1 "font-size"*/ 
+}
+
+.fa-facebook {
+	color: #3B5998;
+}
+
+.fa-twitter {
+	color: #00ACED;
+}
+
+.fa-google-plus-g {
+	color: #DD4B39;
+}
+
+.fa-intagram {
+	color: #517FA4;
+}
+
+.fa-youtube {
+	color: #BB0000;
+}
+
+#footer {
+	background-color: #3F3F3F;
+	color: #D5D5D5;
+}
+
+.light {
+	border-top: 1px solid #D5D5D5;
+	width: 75%;
+}
+
+.light-100 {
+	border-top: 1px solid #D5D5D5;
+	width: 100%;
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+	#content .carousel-inner .carousel-caption {
+		top: 20%;
+	}
+
+	#content .carousel-inner .carousel-caption h1 {
+		font-size: 250%;
+	}
+
+	#content .carousel-inner .carousel-caption h3 {
+		font-size: 160%;
+	}
+
+	#content .carousel-inner .carousel-caption .btn {
+		font-size: 120%;
+	}
+}
+
+@media (max-width: 768px) {
+	#content .carousel-inner .carousel-caption {
+		top: 20%;
+	}
+
+	#content .carousel-inner .carousel-caption h1 {
+		font-size: 220%;
+	}
+
+	#content .carousel-inner .carousel-caption h3 {
+		font-size: 140%;
+		padding-bottom: 0.2rem;
+	}
+
+	#content .carousel-inner .carousel-caption .btn {
+		font-size: 95%;
+		padding: 8px 14px;
+	}
+}
+
+@media (max-width: 576px) {
+	#content .carousel-inner .carousel-caption {
+		top: 10%;
+	}
+
+	#content .carousel-inner .carousel-caption h1 {
+		font-size: 120%;
+	}
+
+	#content .carousel-inner .carousel-caption h3 {
+		font-size: 80%;
+	}
+
+	#content .carousel-inner .carousel-caption .btn {
+		font-size: 70%;
+		padding: 4px 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

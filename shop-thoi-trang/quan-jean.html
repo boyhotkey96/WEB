@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>My Website</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="favicon.ico" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/hieuung.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style>
+		/*Zoom Opacity*/
+		.list img {
+			opacity: 0.8;
+		}
+
+		.list img:hover {
+		transform: scale(1,1);
+		-webkit-transform: scale(1.2,1.2);
+		-moz-transform: scale(1.2,1.2);
+		-o-transform: scale(1.2,1.2);
+		-ms-transform: scale(1.2,1.2);
+		opacity: 1;
+		}
+
+		/*Backtop*/
+		#myBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 10px;
+		  right: 10px;
+		  z-index: 99;
+		  border: none;
+		  outline: none;
+		  /*background: url(images/top.png) center center no-repeat;*/
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Strart Wrapper -->
+	<div class="wrapper">
+		
+	  	<!-- Start Header -->
+		<header>
+		<!--end>div class="row fixed3">
+			<ul>
+		      <li><a href="#aokhoac-id"><i class="fa fa-amazon" aria-hidden="true"></i> Áo Khoác</li></a>
+		      <li><a href="#quanjean-id"><i class="fa fa-grav" aria-hidden="true"></i> Quần Jean</li></a>
+		      <li><a href="#aosomi-id"><i class="fa fa-female" aria-hidden="true"></i> Áo Sơ Mi</li></a>
+		    </ul>
+		</div><--end-->
+		<div class="clearfix"></div>
+			<div class="pageheader header-bg">
+       			 <div class="container">
+		            <div class="row">
+		                <div class="col-md-4 col-md-push-4 logo">
+		                   <h1><a href="#">bc</a></h1>
+		                </div>
+		                <div class="hidden-xs hidden-sm">
+		                    <div class="col-md-4 col-md-pull-4 header-text">
+		                        <div class="callonline"><i class="fa fa-phone"> </i>
+		                            <span class="numbercall">0974.230.141</span>
+		                            <span class="timesupport">Mỗi Ngày: 8.00 - 20.00</span>                            
+		                        </div>
+		                       <a href="#">                       
+		                        <span class="headername">SHOP THỜI TRANG</span>
+		                        </a>
+		                    </div>
+		                    <div class="col-md-4 text-center headerlinedown">
+		                        <span class="headerline">CHUYÊN SỈ VÀ LẺ THỜI TRANG</span>
+			                     <span class="headerline">TẠI SHOP <p style="color: magenta; font-size: large">ONGPHUNG.COM</p></span>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</header>
+	 	<!-- End Header -->
+
+
+
+
+		<!-- Start nav -->
+		<nav class="navbar navbar-default">
+		<div class="container">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">OngPhung.Com</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		      
+		      <form class="navbar-form navbar-left">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Tìm kiếm...">
+		        </div>
+		        <button type="submit" class="btn btn-default">Tìm kiếm</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Trang Chủ</a></li>
+		        <li><a href="gioi-thieu.html"><i class="fa fa-newspaper-o"></i> Giới Thiệu</a></li>
+		        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tasks"></i> Sản Phẩm<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="quan-jean.html">Quần Jean</a></li>
+					<li><a href="ao-khoac.html">Áo khoác</a></li>
+					<li><a href="ao-so-mi.html">Áo sơ mi</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="thanh-toan.html"><i class="fa fa-cc-paypal" aria-hidden="true"></i></i> Thanh Toán</a></li>
+				<li><a href="ban-do.html"><i class="fa fa-map-marker"></i> Bản Đồ</a></li>
+				<li><a href="lien-he.html"><i class="fa fa-id-card-o" aria-hidden="true"></i> Liên hệ</a></li>	
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		  </div><!--vua-->
+		</nav>
+		<!-- End nav -->
+		
+
+		<!--section-->
+		<div class="container">
+				<!--Slide Show-->
+				<div class="row">
+					<div class="col-md-12">
+						<div id="carousel-id" class="carousel slide" data-ride="carousel" style="margin-bottom: 10px;">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+								<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item">
+									<img src="images/banner1.png" width="100%" >
+								</div>
+								<div class="item">
+									<img src="images/banner2.png" width="100%" >
+								</div>
+								<div class="item active">
+									<img src="images/banner3.png" width="100%" >							
+								</div>
+								
+							</div>
+							<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- /.Slide Show -->
+
+
+				<!-- Start Aricle -->
+				<div class="container">
+			    	<div class="row row-offcanvas row-offcanvas-right">
+			       		<div class="col-xs-12 col-sm-12">		         
+			         	<div class="row" style="margin-bottom: 10px">
+			         		<ol class="breadcrumb breadcrumb-inverse">
+							  <li><a href="index.html">Trang chủ</a></li>
+							  <li class="active">Quần Jean</li>
+							</ol>
+							<div class="box-heading"><h4 id="quanjean-id">Quần Jean</h4></div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/1.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J1</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 500.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+				 		</div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/2.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J2</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 400.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+				 		</div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/3.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J3</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 580.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+			            </div>
+			            <div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/4.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J4</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 520.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+			            </div>
+
+			                <!--duoi-->
+							<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/5.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J5</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 470.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+				 		</div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/6.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J6</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 490.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+				 		</div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/7.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J7</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 350.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+			                </div>
+				 		<div class="col-xs-6 col-lg-3">
+							<div class="product-carousel">
+			                <div class="thumbnail hvr-overline-reveal list">
+			                    <a class="product-image gian">
+			                        <img src="images/quan-jean/8.jpg">
+			                    </a>
+			                    <p style="text-align: center; font-size: 16px; color: green;">Mẫu J8</p>
+			                    <p style=" color: blue; text-align: center;">Giá: 620.000 VNĐ</p>
+			                    <a href="#" class="product-atc hvr-buzz" role="button" style="font-size: 12px; color: #fa3f00; display: inline-block;
+									    background-color: #efefef; padding: 8px 14px; margin-left: 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+									    -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;><i class="fa fa-plus"></i> Thêm vào giỏ</a>
+			                </div>
+			                </div>
+				 		</div>
+						</div>	
+						</div>
+					</div>
+				</div>
+	<!-- Start footer -->
+	<footer>
+	
+	<!-- footer1 -->
+	<div class="footer-info clearfix">
+		<div class="container">
+				<div class="row">
+					<!-- left -->
+					<div class="col-md-4">
+						<div class="footer-contacts clearfix">
+							<p class="company-name"><b>Shop Thời Trang Ông Phùng</b></p>
+							<p><i class="fa fa-home" aria-hidden="true"></i> 372/13 Nơ Trang Long, Phường 13, Quận Bình Thạnh, Tp. Hồ Chí Minh</p>
+							<p><i class="fa fa-fax" aria-hidden="true"></i> Tel: <a href="tel:0974230141">0974.230.141</a></p>
+							<p><img src="images/list-card.jpg" alt="Card"></p>
+						</div>
+					</div>
+					<!--/.left-->
+					<!--center-->
+					<div class="col-md-4">
+						<div class="footer-contacts clearfix">
+							<p class="company-name"><b>HOTLINE:</b></p>
+							<p>- Bộ phận kinh doanh: <a href="tel:0975234141">0975.234.141</a></p>
+							<p>- Bộ phận kế toán: <a href="tel:0977234141">0977.230.141</a></p>
+							<p><i class="fa fa-envelope" aria-hidden="true"></i> Email liên hệ: <a href="mailto:admin@ongphung.com">admin@ongphung.com</a></p>
+							<p><i class="fa fa-envelope" aria-hidden="true"></i> Email phản hồi dịch vụ: <a href="mailto:hotro@ongphung.com">hotro@ongphung.com</a></p>							
+						</div>
+					</div>
+					<!--/.center-->						
+					<!--right-->
+					<div class="col-md-4">
+						<div class="footer-social clearfix">
+							<label>Kết nối với chúng tôi:</label>
+						<div class="social-link">
+							<a href="https://www.facebook.com/boyhotkey96" target="_blank" class="icon-facebook hover-up" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://plus.google.com/+boyhotkey96" target="_blank" class="icon-googleplus hover-up" rel="nofollow"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/boyhotkey96" target="_blank" class="icon-twitter hover-up" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://www.youtube.com/boyhotkey96" target="_blank" class="icon-youtube hover-up" rel="nofollow"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							<a href="https://www.bkns.vn/feed" class="icon-rss hover-up"><i class="fa fa-rss" aria-hidden="true"></i></a>
+						</div>
+						</div>
+						<div class="chip"><p style="color: white">Tác giả: <img src="images/op.jpg" alt="Person" width="96" height="96">Phùng Bá Dự</p></div>
+					</div>
+					<!--/.right-->
+				</div>
+			</div>
+		</div>
+		<!-- /.footer1 -->
+		
+		<!--footer2-->
+		<div class="footer-line clearfix">
+			<div class="container">
+				<ul style="float:left;margin:0 30px;width:350px;">
+			      <li style="border-bottom:1px solid #ccc;line-height:2em;padding-bottom:5px;text-align:center;font-size:15pt;"><i class="fa fa-ravelry" aria-hidden="true"></i>
+			Thông tin tòa soạn</li>
+			      <li><b><i class="fa fa-user-circle" aria-hidden="true"></i> Tổng biên tập:</b> Phùng Bá Dự</li>
+			      <li><b><i class="fa fa-user-o" aria-hidden="true"></i> Phó biên tập:</b> Ông Phùng</li>
+			      <li><span style="visibility:hidden;"><b><i class="fa fa-user-o" aria-hidden="true"></i>
+			Phó biên tập:</b></span> Mr.Dự</li>
+			    </ul>
+			    <ul style="float:right">
+				  <li style="border-bottom:1px solid #ccc;line-height:2em;padding-bottom:5px;text-align:center;font-size:15pt;"><i class="fa fa-map" aria-hidden="true"></i> Địa chỉ liên hệ</li>
+				  <li><b><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ:</b> 391A Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP. Hồ Chí Minh</li>
+				  <li><b><i class="fa fa-phone-square" aria-hidden="true"></i> Hotline:</b> 0974.230.141 | 0975.234.141 | 0977.234.141</li>
+				  <li><b><i class="fa fa-share" aria-hidden="true"></i> Mail:</b> Boyhotkey96@gmail.com | Dupbps03216@fpt.edu.vn</li>
+				</ul>
+			</div>
+		</div>
+		<!--/.footer2-->
+		
+		<!--footer3-->
+		<!--top-->
+		<div class="footer-fixed clearfix">
+			<div class="container">
+				<p class="mh-copyright" style="font-size: 14px; color: #999; text-align: center;">Quản trị: <a href="/" target="_blank" style="color: red;"> Mr.Dự</a><br>© 2017 <a href="/" style="color: red;">OngPhung.Com</a></p>
+			</div>
+		</div>
+		<!--/.top-->
+		<!--bot-->
+		<div class="footer-fixed clearfix">
+			<p style="border-top: 1px solid #ddd; line-height: 30px; color: #c30; text-align: center;">© Shop Thời Trang Ông Phùng - ® Website được xây dựng bởi sinh viên Fpoly</p>
+		</div>
+		<!--/.bot-->
+		<!--/.footer3-->
+	</footer>
+	<!-- End footer -->
+
+
+	</div><!-- End Wrapper -->
+	<!-- Start Backtop-->
+	<img src="images/top.png" onclick="topFunction()" id="myBtn" title="Go to top">
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<!--End Backtop-->
+</body>
+</html>
